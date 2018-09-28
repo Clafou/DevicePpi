@@ -11,24 +11,67 @@ import XCTest
 
 class DevicePpiTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testiPhoneXS() {
+        let o = DevicePpi(machineName: "iPhone11,2")
+        XCTAssertEqual(o.ppi, 458)
+        XCTAssertNil(o.error)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testiPad() {
+        let o = DevicePpi(machineName: "iPad7,3")
+        XCTAssertEqual(o.ppi, 264)
+        XCTAssertNil(o.error)
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUnkownName() {
+        let o = DevicePpi(machineName: "DoesNotExist")
+        XCTAssertEqual(o.ppi, 326)
+        XCTAssertNotNil(o.error)
+    }
+    
+    func testUnknownRetinaIPad() {
+        let ppi = DevicePpi.guessPpi(idiom: .pad, screen: MockScreen(scale: 2, nativeScale: 2))
+        XCTAssertEqual(ppi, 264)
+    }
+    
+    func testUnkownSuperRetinaIPhone() {
+        let ppi = DevicePpi.guessPpi(idiom: .phone, screen: MockScreen(scale: 3, nativeScale: 3))
+        XCTAssertEqual(ppi, 458)
+    }
+    
+    func testUnknownRetinaIPhone() {
+        let ppi = DevicePpi.guessPpi(idiom: .phone, screen: MockScreen(scale: 2, nativeScale: 2))
+        XCTAssertEqual(ppi, 326)
+    }
+    
+    func testUnknownNonRetinaIPad() {
+        let ppi = DevicePpi.guessPpi(idiom: .pad, screen: MockScreen(scale: 1, nativeScale: 1))
+        XCTAssertEqual(ppi, 132)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+
+}
+
+class MockScreen: UIScreen {
+    
+    let _scale: CGFloat
+    let _nativeScale: CGFloat
+    
+    init(scale: CGFloat, nativeScale: CGFloat) {
+        _scale = scale
+        _nativeScale = nativeScale
+        super.init()
+    }
+    
+    override var scale: CGFloat {
+        get {
+            return _scale
         }
     }
 
+    override var nativeScale: CGFloat {
+        get {
+            return _nativeScale
+        }
+    }
 }
