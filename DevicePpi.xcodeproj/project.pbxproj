@@ -11,10 +11,6 @@
 		9674BCB8215E385A001928FE /* DevicePpiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCB7215E385A001928FE /* DevicePpiTests.swift */; };
 		9674BCC5215E38EE001928FE /* DevicePpi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC3215E38EE001928FE /* DevicePpi.swift */; };
 		9674BCC6215E38EE001928FE /* SysInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC4215E38EE001928FE /* SysInfo.swift */; };
-		9674BCD1215E50A9001928FE /* UIDevice+machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCCE215E50A9001928FE /* UIDevice+machine.swift */; };
-		9674BCD2215E50A9001928FE /* KnownDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCCF215E50A9001928FE /* KnownDevices.swift */; };
-		9674BCD3215E50A9001928FE /* KnownDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCD0215E50A9001928FE /* KnownDevice.swift */; };
-		9674BCD5215E50D0001928FE /* LegacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCD4215E50D0001928FE /* LegacyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +31,6 @@
 		9674BCB9215E385A001928FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9674BCC3215E38EE001928FE /* DevicePpi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicePpi.swift; sourceTree = "<group>"; };
 		9674BCC4215E38EE001928FE /* SysInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SysInfo.swift; sourceTree = "<group>"; };
-		9674BCCE215E50A9001928FE /* UIDevice+machine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+machine.swift"; path = "DevicePpiTests/Legacy/UIDevice+machine.swift"; sourceTree = SOURCE_ROOT; };
-		9674BCCF215E50A9001928FE /* KnownDevices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KnownDevices.swift; path = DevicePpiTests/Legacy/KnownDevices.swift; sourceTree = SOURCE_ROOT; };
-		9674BCD0215E50A9001928FE /* KnownDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KnownDevice.swift; path = DevicePpiTests/Legacy/KnownDevice.swift; sourceTree = SOURCE_ROOT; };
-		9674BCD4215E50D0001928FE /* LegacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,21 +85,8 @@
 			children = (
 				9674BCB7215E385A001928FE /* DevicePpiTests.swift */,
 				9674BCB9215E385A001928FE /* Info.plist */,
-				9674BCCD215E508D001928FE /* Legacy */,
-				9674BCD4215E50D0001928FE /* LegacyTests.swift */,
 			);
 			path = DevicePpiTests;
-			sourceTree = "<group>";
-		};
-		9674BCCD215E508D001928FE /* Legacy */ = {
-			isa = PBXGroup;
-			children = (
-				9674BCD0215E50A9001928FE /* KnownDevice.swift */,
-				9674BCCF215E50A9001928FE /* KnownDevices.swift */,
-				9674BCCE215E50A9001928FE /* UIDevice+machine.swift */,
-			);
-			name = Legacy;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9674BCB8215E385A001928FE /* DevicePpiTests.swift in Sources */,
-				9674BCD3215E50A9001928FE /* KnownDevice.swift in Sources */,
-				9674BCD5215E50D0001928FE /* LegacyTests.swift in Sources */,
-				9674BCD2215E50A9001928FE /* KnownDevices.swift in Sources */,
-				9674BCD1215E50A9001928FE /* UIDevice+machine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

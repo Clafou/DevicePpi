@@ -108,8 +108,6 @@ extension DevicePpi {
                 
                 // iPhone 4S
                 "iPhone4,1",
-                // iPhone 4
-                "iPhone3,1", "iPhone3,3",
 
                 // iPad Mini 4
                 "iPad5,1", "iPad5,2",
