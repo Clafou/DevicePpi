@@ -11,6 +11,9 @@
 		9674BCB8215E385A001928FE /* DevicePpiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCB7215E385A001928FE /* DevicePpiTests.swift */; };
 		9674BCC5215E38EE001928FE /* DevicePpi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC3215E38EE001928FE /* DevicePpi.swift */; };
 		9674BCC6215E38EE001928FE /* SysInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC4215E38EE001928FE /* SysInfo.swift */; };
+		9674BCD921621AA4001928FE /* DevicePpi.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCD821621AA4001928FE /* DevicePpi.podspec */; };
+		9674BCDC21621DDC001928FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCDA21621DDC001928FE /* README.md */; };
+		9674BCDD21621DDC001928FE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCDB21621DDC001928FE /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		9674BCB9215E385A001928FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9674BCC3215E38EE001928FE /* DevicePpi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicePpi.swift; sourceTree = "<group>"; };
 		9674BCC4215E38EE001928FE /* SysInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SysInfo.swift; sourceTree = "<group>"; };
+		9674BCD821621AA4001928FE /* DevicePpi.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DevicePpi.podspec; sourceTree = "<group>"; };
+		9674BCDA21621DDC001928FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9674BCDB21621DDC001928FE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,10 @@
 		9674BC9F215E385A001928FE = {
 			isa = PBXGroup;
 			children = (
+				9674BCD821621AA4001928FE /* DevicePpi.podspec */,
+				9674BCAD215E385A001928FE /* Info.plist */,
+				9674BCDB21621DDC001928FE /* LICENSE */,
+				9674BCDA21621DDC001928FE /* README.md */,
 				9674BCAB215E385A001928FE /* DevicePpi */,
 				9674BCB6215E385A001928FE /* DevicePpiTests */,
 				9674BCAA215E385A001928FE /* Products */,
@@ -74,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				9674BCC3215E38EE001928FE /* DevicePpi.swift */,
-				9674BCAD215E385A001928FE /* Info.plist */,
 				9674BCC4215E38EE001928FE /* SysInfo.swift */,
 			);
 			path = DevicePpi;
@@ -180,6 +189,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9674BCDD21621DDC001928FE /* LICENSE in Resources */,
+				9674BCDC21621DDC001928FE /* README.md in Resources */,
+				9674BCD921621AA4001928FE /* DevicePpi.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +366,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DevicePpi/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +393,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DevicePpi/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
