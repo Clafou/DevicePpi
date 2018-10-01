@@ -8,43 +8,38 @@ import UIKit
 
 struct DevicePpi {
     
-    static let current = DevicePpi(machineName: SysInfo.machineName)
+    enum GetPpiResult {
+        case success(ppi: Double)
+        case unknown(bestGuessPpi: Double, error: Error)
+    }
     
-    let ppi: Double
-    
-    /// If the PPI was guessed, contains an error for the reason
-    let error: Swift.Error?
-    
-    init(machineName: String?) {
+    static func getPpi() -> GetPpiResult
+    {
         do {
-            self.ppi = try DevicePpi.findPpi(machineName: machineName)
-            self.error = nil
+            let ppi = try DevicePpi.lookUpPpi(machineName: SysInfo.machineName ?? "n/a")
+            return .success(ppi: ppi)
         }
         catch {
-            self.ppi = DevicePpi.guessPpi()
-            self.error = error
+            let ppi = DevicePpi.guessPpi(idiom: UIDevice.current.userInterfaceIdiom, screen: UIScreen.main)
+            return .unknown(bestGuessPpi: ppi, error: error)
         }
     }
 }
 
 extension DevicePpi {
     
-    enum Error: Swift.Error {
-        case noMachineName
+    enum LookUpError: Error {
         case unknownMachineName(String)
     }
     
-    static func findPpi(machineName: String?) throws -> Double {
-        guard let machineName = machineName else {
-            throw Error.noMachineName
-        }
+    static func lookUpPpi(machineName: String) throws -> Double {
         guard let match = machineNamesToPpi.first(where: { $0.machineNames.contains(machineName) }) else {
-            throw Error.unknownMachineName(machineName)
+            throw LookUpError.unknownMachineName(machineName)
         }
         return match.ppi
     }
     
-    static func guessPpi(idiom: UIUserInterfaceIdiom = UIDevice.current.userInterfaceIdiom, screen: UIScreen = UIScreen.main) -> Double {
+    static func guessPpi(idiom: UIUserInterfaceIdiom, screen: UIScreen) -> Double {
         if idiom == .pad {
             return screen.scale == 2 ? 264 : 132
         }

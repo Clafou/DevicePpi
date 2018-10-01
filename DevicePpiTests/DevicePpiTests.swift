@@ -12,21 +12,15 @@ import XCTest
 class DevicePpiTests: XCTestCase {
 
     func testiPhoneXS() {
-        let o = DevicePpi(machineName: "iPhone11,2")
-        XCTAssertEqual(o.ppi, 458)
-        XCTAssertNil(o.error)
+        XCTAssertEqual(try! DevicePpi.lookUpPpi(machineName: "iPhone11,2"), 458)
     }
 
     func testiPad() {
-        let o = DevicePpi(machineName: "iPad7,3")
-        XCTAssertEqual(o.ppi, 264)
-        XCTAssertNil(o.error)
+        XCTAssertEqual(try! DevicePpi.lookUpPpi(machineName: "iPad7,3"), 264)
     }
 
     func testUnkownName() {
-        let o = DevicePpi(machineName: "DoesNotExist")
-        XCTAssertEqual(o.ppi, 326)
-        XCTAssertNotNil(o.error)
+        XCTAssertThrowsError(try DevicePpi.lookUpPpi(machineName: "DoesNotExist"))
     }
     
     func testUnknownRetinaIPad() {
@@ -48,8 +42,6 @@ class DevicePpiTests: XCTestCase {
         let ppi = DevicePpi.guessPpi(idiom: .pad, screen: MockScreen(scale: 1, nativeScale: 1))
         XCTAssertEqual(ppi, 132)
     }
-
-
 }
 
 class MockScreen: UIScreen {
