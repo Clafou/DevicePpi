@@ -14,7 +14,7 @@ public enum Ppi {
     }
     
     /// Determines the PPI of the device's display.
-    /// When successful (the device is know), provides the PPI value.
+    /// When successful (the device is known), provides the PPI value.
     /// When not successful (the device is not recognised), provides a guessed PPI value and a non-fatal error
     /// that you can log to Crashlytics or other to track new device models that need to be added to the list.
     public static func get() -> GetPpiResult
