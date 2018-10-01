@@ -6,9 +6,9 @@
 
 import UIKit
 
-struct DevicePpi {
+public enum Ppi {
     
-    enum GetPpiResult {
+    public enum GetPpiResult {
         case success(ppi: Double)
         case unknown(bestGuessPpi: Double, error: Error)
     }
@@ -17,33 +17,33 @@ struct DevicePpi {
     /// When successful (the device is know), provides the PPI value.
     /// When not successful (the device is not recognised), provides a guessed PPI value and a non-fatal error
     /// that you can log to Crashlytics or other to track new device models that need to be added to the list.
-    static func getPpi() -> GetPpiResult
+    public static func get() -> GetPpiResult
     {
         do {
-            let ppi = try DevicePpi.lookUpPpi(machineName: SysInfo.machineName ?? "n/a")
+            let ppi = try Ppi.lookUp(machineName: SysInfo.machineName ?? "n/a")
             return .success(ppi: ppi)
         }
         catch {
-            let ppi = DevicePpi.guessPpi(idiom: UIDevice.current.userInterfaceIdiom, screen: UIScreen.main)
+            let ppi = Ppi.guess(idiom: UIDevice.current.userInterfaceIdiom, screen: UIScreen.main)
             return .unknown(bestGuessPpi: ppi, error: error)
         }
     }
 }
 
-extension DevicePpi {
+extension Ppi {
     
     enum LookUpError: Error {
         case unknownMachineName(String)
     }
     
-    static func lookUpPpi(machineName: String) throws -> Double {
+    static func lookUp(machineName: String) throws -> Double {
         guard let match = machineNamesToPpi.first(where: { $0.machineNames.contains(machineName) }) else {
             throw LookUpError.unknownMachineName(machineName)
         }
         return match.ppi
     }
     
-    static func guessPpi(idiom: UIUserInterfaceIdiom, screen: UIScreen) -> Double {
+    static func guess(idiom: UIUserInterfaceIdiom, screen: UIScreen) -> Double {
         if idiom == .pad {
             return screen.scale == 2 ? 264 : 132
         }

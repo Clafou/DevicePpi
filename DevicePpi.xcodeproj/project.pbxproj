@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9674BCB3215E385A001928FE /* DevicePpi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674BCA9215E385A001928FE /* DevicePpi.framework */; };
 		9674BCB8215E385A001928FE /* DevicePpiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCB7215E385A001928FE /* DevicePpiTests.swift */; };
-		9674BCC5215E38EE001928FE /* DevicePpi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC3215E38EE001928FE /* DevicePpi.swift */; };
+		9674BCC5215E38EE001928FE /* Ppi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC3215E38EE001928FE /* Ppi.swift */; };
 		9674BCC6215E38EE001928FE /* SysInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674BCC4215E38EE001928FE /* SysInfo.swift */; };
 		9674BCD921621AA4001928FE /* DevicePpi.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCD821621AA4001928FE /* DevicePpi.podspec */; };
 		9674BCDC21621DDC001928FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCDA21621DDC001928FE /* README.md */; };
@@ -32,7 +32,7 @@
 		9674BCB2215E385A001928FE /* DevicePpiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevicePpiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9674BCB7215E385A001928FE /* DevicePpiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePpiTests.swift; sourceTree = "<group>"; };
 		9674BCB9215E385A001928FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9674BCC3215E38EE001928FE /* DevicePpi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicePpi.swift; sourceTree = "<group>"; };
+		9674BCC3215E38EE001928FE /* Ppi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ppi.swift; sourceTree = "<group>"; };
 		9674BCC4215E38EE001928FE /* SysInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SysInfo.swift; sourceTree = "<group>"; };
 		9674BCD821621AA4001928FE /* DevicePpi.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DevicePpi.podspec; sourceTree = "<group>"; };
 		9674BCDA21621DDC001928FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		9674BCAB215E385A001928FE /* DevicePpi */ = {
 			isa = PBXGroup;
 			children = (
-				9674BCC3215E38EE001928FE /* DevicePpi.swift */,
+				9674BCC3215E38EE001928FE /* Ppi.swift */,
 				9674BCC4215E38EE001928FE /* SysInfo.swift */,
 			);
 			path = DevicePpi;
@@ -209,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9674BCC5215E38EE001928FE /* DevicePpi.swift in Sources */,
+				9674BCC5215E38EE001928FE /* Ppi.swift in Sources */,
 				9674BCC6215E38EE001928FE /* SysInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

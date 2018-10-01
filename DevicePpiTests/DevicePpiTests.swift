@@ -12,34 +12,34 @@ import XCTest
 class DevicePpiTests: XCTestCase {
 
     func testiPhoneXS() {
-        XCTAssertEqual(try! DevicePpi.lookUpPpi(machineName: "iPhone11,2"), 458)
+        XCTAssertEqual(try! Ppi.lookUp(machineName: "iPhone11,2"), 458)
     }
 
     func testiPad() {
-        XCTAssertEqual(try! DevicePpi.lookUpPpi(machineName: "iPad7,3"), 264)
+        XCTAssertEqual(try! Ppi.lookUp(machineName: "iPad7,3"), 264)
     }
 
     func testUnkownName() {
-        XCTAssertThrowsError(try DevicePpi.lookUpPpi(machineName: "DoesNotExist"))
+        XCTAssertThrowsError(try Ppi.lookUp(machineName: "DoesNotExist"))
     }
     
     func testUnknownRetinaIPad() {
-        let ppi = DevicePpi.guessPpi(idiom: .pad, screen: MockScreen(scale: 2, nativeScale: 2))
+        let ppi = Ppi.guess(idiom: .pad, screen: MockScreen(scale: 2, nativeScale: 2))
         XCTAssertEqual(ppi, 264)
     }
     
     func testUnkownSuperRetinaIPhone() {
-        let ppi = DevicePpi.guessPpi(idiom: .phone, screen: MockScreen(scale: 3, nativeScale: 3))
+        let ppi = Ppi.guess(idiom: .phone, screen: MockScreen(scale: 3, nativeScale: 3))
         XCTAssertEqual(ppi, 458)
     }
     
     func testUnknownRetinaIPhone() {
-        let ppi = DevicePpi.guessPpi(idiom: .phone, screen: MockScreen(scale: 2, nativeScale: 2))
+        let ppi = Ppi.guess(idiom: .phone, screen: MockScreen(scale: 2, nativeScale: 2))
         XCTAssertEqual(ppi, 326)
     }
     
     func testUnknownNonRetinaIPad() {
-        let ppi = DevicePpi.guessPpi(idiom: .pad, screen: MockScreen(scale: 1, nativeScale: 1))
+        let ppi = Ppi.guess(idiom: .pad, screen: MockScreen(scale: 1, nativeScale: 1))
         XCTAssertEqual(ppi, 132)
     }
 }
