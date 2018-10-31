@@ -9,7 +9,7 @@ It is useful for applications that display content in true size, for example:
 
 ## Example
 
-As Apple releases new iOS devices this library needs to be continously updated to add new devices to its built-in list. It is unable to provide a correct PPI value for new devices that it does not yet know, but in such cases it provides a "best guess" PPI and an error code which you can treat as a non-fatal error.
+As Apple releases new iOS devices this library needs to be continously updated to add new devices to its built-in list. It cannot guarantee an accurate PPI value for new devices that it does not yet know, but in such cases it provides a "best guess" PPI and an error code which you can treat as a non-fatal error.
 
 ```swift
 let ppi: Double = {
@@ -35,6 +35,51 @@ DevicePpi can be added to project via [CocoaPods](https://cocoapods.org).
 ```ruby
 pod 'DevicePpi'
 ```
+
+## Devices
+
+The list of devices and their PPI is updated as new models are announced. Currently, the following devices are included:
+
+iPhone
+* iPhone 4S
+* iPhone 5
+* iPhone 5C
+* iPhone 5S
+* iPhone 6
+* iPhone 5 Plus
+* iPhone 6S
+* iPhone SE
+* iPhone 7
+* iPhone 7 Plus
+* iPhone 8
+* iPhone 8 Plus
+* iPhone X
+* iPhone XS
+* iPhone XS Max
+* iPhone XR
+
+iPod Touch
+* iPod Touch (5th generation)
+* iPod Touch (6th generation)
+
+iPad
+* iPad 2
+* iPad Mini
+* iPad (3rd generation)
+* iPad (4th generation)
+* iPad Air
+* iPad Mini 2
+* iPad Mini 3
+* iPad Air 2
+* iPad Mini 4
+* iPad Pro (9.7″)
+* iPad Pro (12.9″)
+* iPad (5th generation)
+* iPad Pro (12.9″, 2nd generation)
+* iPad Pro (10.5″)
+* iPad (6th generation)
+
+Devices that do not support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
 
 ## Author
 

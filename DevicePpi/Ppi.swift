@@ -100,9 +100,9 @@ extension Ppi {
                 "iPhone5,3", "iPhone5,4",
                 // iPhone 5
                 "iPhone5,1", "iPhone5,2",
-                // iPod Touch 6
+                // iPod Touch (6th generation)
                 "iPod7,1",
-                // iPod Touch 5
+                // iPod Touch (5th generation)
                 "iPod5,1",
                 
                 // iPhone 4S
@@ -119,23 +119,25 @@ extension Ppi {
         ),
         (
             [
-                // iPad 12.9"
-                "iPad6,7", "iPad6,8", "iPad7,1", "iPad7,2",
-                // iPad 10.5"
-                "iPad7,3", "iPad7,4",
-                // iPad (6th Generation)
+                // iPad (6th generation)
                 "iPad7,5", "iPad7,6",
-                // iPad (5th Generation)
+                // iPad Pro (10.5″)
+                "iPad7,3", "iPad7,4",
+                // iPad Pro (12.9″, 2nd generation)
+                "iPad7,1", "iPad7,2",
+                // iPad (5th generation)
                 "iPad6,11", "iPad6,12",
-                // iPad Pro 9.7
+                // iPad Pro (12.9″)
+                "iPad6,7", "iPad6,8",
+                // iPad Pro (9.7″)
                 "iPad6,3", "iPad6,4",
                 // iPad Air 2
                 "iPad5,3", "iPad5,4",
                 // iPad Air
                 "iPad4,1", "iPad4,2", "iPad4,3",
-                // iPad 4
+                // iPad (4th generation)
                 "iPad3,4", "iPad3,5", "iPad3,6",
-                // iPad 3
+                // iPad (3rd generation)
                 "iPad3,1", "iPad3,2", "iPad3,3"
             ],
             264
@@ -149,7 +151,7 @@ extension Ppi {
         ),
         (
             [
-                // iPad
+                // iPad 2
                 "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4"
             ],
             132
