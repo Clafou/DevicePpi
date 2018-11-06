@@ -78,8 +78,10 @@ iPad
 * iPad Pro (12.9″, 2nd generation)
 * iPad Pro (10.5″)
 * iPad (6th generation)
+* iPad Pro (11″)
+* iPad Pro (12.9″, 3rd generation)
 
-Devices that do not support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
+Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
 
 ## Author
 
