@@ -108,6 +108,8 @@ extension Ppi {
                 // iPhone 4S
                 "iPhone4,1",
 
+                // iPad Mini (5th generation)
+                "iPad11,1", "iPad11,2",
                 // iPad Mini 4
                 "iPad5,1", "iPad5,2",
                 // iPad Mini 3
@@ -119,6 +121,8 @@ extension Ppi {
         ),
         (
             [
+                // iPad Air (3rd generation)
+                "iPad11,3", "iPad11,4",
                 // iPad Pro (12.9″, 3rd generation)
                 "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8",
                 // iPad Pro (11″)
