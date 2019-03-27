@@ -9,7 +9,7 @@ It is useful for applications that display content in true size, for example:
 
 ## Example
 
-As Apple releases new iOS devices this library needs to be continously updated to add new devices to its built-in list. It cannot guarantee an accurate PPI value for new devices that it does not yet know, but in such cases it provides a "best guess" PPI and an error code which you can treat as a non-fatal error.
+As Apple releases new iOS devices this library needs to be continously updated to add new devices to its built-in list. It cannot guarantee an accurate PPI value for new devices that it does not yet know, but in such cases it provides a "best guess" PPI based on heuristics (`UIUserInterfaceIdiom` and `UIScreen` values) and an error code which you can treat as a non-fatal error.
 
 ```swift
 let ppi: Double = {
@@ -18,7 +18,7 @@ let ppi: Double = {
         return ppi
     case .unknown(let bestGuessPpi, let error):
         // A bestGuessPpi value is provided but may be incorrect
-        // Treat as a non-fatal error -- e.g. send error to Crashlytics and/or display a message
+        // Treat as a non-fatal error -- e.g. log to your backend and/or display a message
         return bestGuessPpi
     }
 }()
@@ -80,6 +80,8 @@ iPad
 * iPad (6th generation)
 * iPad Pro (11″)
 * iPad Pro (12.9″, 3rd generation)
+* iPad Air (3rd generation)
+* iPad Mini (5th generation)
 
 Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
 
