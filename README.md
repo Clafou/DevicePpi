@@ -57,6 +57,9 @@ iPhone
 * iPhone XS
 * iPhone XS Max
 * iPhone XR
+* iPhone 11
+* iPhone 11 Pro
+* iPhone 11 Pro Max
 
 iPod Touch
 * iPod Touch (5th generation)
@@ -82,6 +85,7 @@ iPad
 * iPad Pro (12.9″, 3rd generation)
 * iPad Air (3rd generation)
 * iPad Mini (5th generation)
+* iPad (7th generation)
 
 Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
 
