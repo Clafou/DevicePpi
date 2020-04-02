@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DevicePpi'
-  s.version          = '1.2.5'
+  s.version          = '1.2.6'
   s.summary          = 'Gets the PPI resolution of the display'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Gets the PPI resolution of the display, using a built-in list of known devices.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DevicePpi/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
   s.swift_version = '5.0'
   
   s.frameworks = 'UIKit'
