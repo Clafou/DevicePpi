@@ -5,7 +5,7 @@ This library provides run-time detection of the PPI (pixels per inch) resolution
 It is useful for applications that display content in true size, for example:
 
 - [3-in-1 Ruler](https://itunes.apple.com/us/app/3-in-1-ruler/id1262452961?mt=8) uses it to display an on-screen ruler.
-- [Print to Size](https://itunes.apple.com/us/app/print-to-size/id949490225?mt=8) uses it for its zoom feature, which shows a 1:1 indicator when the document is displayed in true size.
+- [Print to Size](https://itunes.apple.com/us/app/print-to-size/id949490225?mt=8) uses it for its zoom indicator.
 
 ## Example
 
@@ -30,7 +30,17 @@ iOS 8 or later.
 
 ## Installation
 
-DevicePpi can be added to project via [CocoaPods](https://cocoapods.org).
+### Swift Package Manager
+
+Add a package dependency with this URL:
+
+```
+https://github.com/Clafou/DevicePpi
+```
+
+### CocoaPods
+
+Alternatively, DevicePpi can be added to your project via [CocoaPods](https://cocoapods.org).
 
 ```ruby
 pod 'DevicePpi'
