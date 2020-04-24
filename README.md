@@ -70,6 +70,7 @@ iPhone
 * iPhone 11
 * iPhone 11 Pro
 * iPhone 11 Pro Max
+* iPhone SE (2nd generation)
 
 iPod Touch
 * iPod Touch (5th generation)

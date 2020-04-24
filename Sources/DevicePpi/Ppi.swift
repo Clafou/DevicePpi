@@ -89,6 +89,8 @@ extension Ppi {
                 // iPhone XR
                 "iPhone11,8",
 
+                // iPhone SE (2nd generation)
+                "iPhone12,8",
                 // iPhone 8
                 "iPhone10,1", "iPhone10,4",
                 // iPhone 7
