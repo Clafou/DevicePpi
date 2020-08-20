@@ -75,6 +75,7 @@ iPhone
 iPod Touch
 * iPod Touch (5th generation)
 * iPod Touch (6th generation)
+* iPod Touch (7th generation)
 
 iPad
 * iPad 2
