@@ -108,6 +108,8 @@ extension Ppi {
                 "iPhone5,3", "iPhone5,4",
                 // iPhone 5
                 "iPhone5,1", "iPhone5,2",
+                // iPod Touch (7th generation)
+                "iPod9,1",
                 // iPod Touch (6th generation)
                 "iPod7,1",
                 // iPod Touch (5th generation)
