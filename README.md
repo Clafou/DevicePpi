@@ -100,6 +100,7 @@ iPad
 * iPad (7th generation)
 * iPad Pro (11″, 2nd generation)
 * iPad Pro (12.9″, 4th generation)
+* iPad (8th generation)
 
 Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
 
