@@ -108,23 +108,23 @@ extension Ppi {
                 "iPhone5,3", "iPhone5,4",
                 // iPhone 5
                 "iPhone5,1", "iPhone5,2",
-                // iPod Touch (7th generation)
+                // iPod touch (7th generation)
                 "iPod9,1",
-                // iPod Touch (6th generation)
+                // iPod touch (6th generation)
                 "iPod7,1",
-                // iPod Touch (5th generation)
+                // iPod touch (5th generation)
                 "iPod5,1",
                 
                 // iPhone 4S
                 "iPhone4,1",
 
-                // iPad Mini (5th generation)
+                // iPad mini (5th generation)
                 "iPad11,1", "iPad11,2",
-                // iPad Mini 4
+                // iPad mini 4
                 "iPad5,1", "iPad5,2",
-                // iPad Mini 3
+                // iPad mini 3
                 "iPad4,7", "iPad4,8", "iPad4,9",
-                // iPad Mini 2
+                // iPad mini 2
                 "iPad4,4", "iPad4,5", "iPad4,6"
             ],
             326
@@ -172,7 +172,7 @@ extension Ppi {
         ),
         (
             [
-                // iPad Mini
+                // iPad mini
                 "iPad2,5", "iPad2,6", "iPad2,7"
             ],
             163

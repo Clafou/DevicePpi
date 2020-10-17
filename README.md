@@ -72,21 +72,21 @@ iPhone
 * iPhone 11 Pro Max
 * iPhone SE (2nd generation)
 
-iPod Touch
-* iPod Touch (5th generation)
-* iPod Touch (6th generation)
-* iPod Touch (7th generation)
+iPod touch
+* iPod touch (5th generation)
+* iPod touch (6th generation)
+* iPod touch (7th generation)
 
 iPad
 * iPad 2
-* iPad Mini
+* iPad mini
 * iPad (3rd generation)
 * iPad (4th generation)
 * iPad Air
-* iPad Mini 2
-* iPad Mini 3
+* iPad mini 2
+* iPad mini 3
 * iPad Air 2
-* iPad Mini 4
+* iPad mini 4
 * iPad Pro (9.7″)
 * iPad Pro (12.9″)
 * iPad (5th generation)
@@ -96,14 +96,14 @@ iPad
 * iPad Pro (11″)
 * iPad Pro (12.9″, 3rd generation)
 * iPad Air (3rd generation)
-* iPad Mini (5th generation)
+* iPad mini (5th generation)
 * iPad (7th generation)
 * iPad Pro (11″, 2nd generation)
 * iPad Pro (12.9″, 4th generation)
 * iPad (8th generation)
 * iPad Air (4th generation)
 
-Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod Touch.
+Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod touch.
 
 ## Author
 
