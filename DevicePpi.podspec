@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DevicePpi'
-  s.version          = '1.2.10'
+  s.version          = '1.2.11'
   s.summary          = 'Gets the PPI resolution of the display'
 
 # This description is used to generate tags and improve search results.
