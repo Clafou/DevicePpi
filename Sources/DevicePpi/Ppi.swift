@@ -149,6 +149,10 @@ extension Ppi {
         ),
         (
             [
+                // iPad Pro (12.9″, 5th generation)
+                "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11",
+                // iPad Pro (11″, 3rd generation)
+                "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7",
                 // iPad Air (4th generation)
                 "iPad13,1", "iPad13,2",
                 // iPad (8th generation)
