@@ -56,6 +56,8 @@ extension Ppi {
     private static var machineNamesToPpi: [(machineNames: [String], ppi: Double)] = [
         (
             [
+                // iPhone 13 mini
+                "iPhone14,4",
                 // iPhone 12 mini
                 "iPhone13,1"
             ],
@@ -63,6 +65,10 @@ extension Ppi {
         ),
         (
             [
+                // iPhone 13
+                "iPhone14,5",
+                // iPhone 13 Pro
+                "iPhone14,2",
                 // iPhone 12
                 "iPhone13,2",
                 // iPhone 12 Pro
@@ -72,6 +78,8 @@ extension Ppi {
         ),
         (
             [
+                // iPhone 13 Pro Max
+                "iPhone14,3",
                 // iPhone 12 Pro Max
                 "iPhone13,4",
                 // iPhone 11 Pro
@@ -136,6 +144,8 @@ extension Ppi {
                 // iPhone 4S
                 "iPhone4,1",
 
+                // iPad mini (6th generation)
+                "iPad14,1", "iPad14,2",
                 // iPad mini (5th generation)
                 "iPad11,1", "iPad11,2",
                 // iPad mini 4
@@ -149,6 +159,8 @@ extension Ppi {
         ),
         (
             [
+                // iPad (9th generation)
+                "iPad12,1", "iPad12,2",
                 // iPad Pro (12.9″, 5th generation)
                 "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11",
                 // iPad Pro (11″, 3rd generation)

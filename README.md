@@ -75,6 +75,10 @@ iPhone
 * iPhone 12
 * iPhone 12 Pro
 * iPhone 12 Pro Max
+* iPhone 13 mini
+* iPhone 13
+* iPhone 13 Pro
+* iPhone 13 Pro Max
 
 iPod touch
 * iPod touch (5th generation)
@@ -108,6 +112,8 @@ iPad
 * iPad Air (4th generation)
 * iPad Pro (11″, 3rd generation)
 * iPad Pro (12.9″, 5th generation)
+* iPad (9th generation)
+* iPad mini (6th generation)
 
 Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod touch.
 
