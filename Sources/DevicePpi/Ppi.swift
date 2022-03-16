@@ -115,6 +115,8 @@ extension Ppi {
                 // iPhone XR
                 "iPhone11,8",
 
+                // iPhone SE (3rd generation)
+                "iPhone14,6",
                 // iPhone SE (2nd generation)
                 "iPhone12,8",
                 // iPhone 8
@@ -159,6 +161,8 @@ extension Ppi {
         ),
         (
             [
+                // iPad Air (5th generation)
+                "iPad13,16", "iPad13,17",
                 // iPad (9th generation)
                 "iPad12,1", "iPad12,2",
                 // iPad Pro (12.9″, 5th generation)
