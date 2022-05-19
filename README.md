@@ -46,6 +46,10 @@ Alternatively, DevicePpi can be added to your project via [CocoaPods](https://co
 pod 'DevicePpi'
 ```
 
+### Other
+
+[Capacitor](https://capacitorjs.com) users can use this package on [npm](https://www.npmjs.com/package/capacitor-screen-size) and [GitHub](https://github.com/onexip/capacitor-screen-size)
+
 ## Devices
 
 The list of devices and their PPI is updated as new models are announced. Currently, the following devices are included:
