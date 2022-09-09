@@ -65,6 +65,12 @@ extension Ppi {
         ),
         (
             [
+                // iPhone 14
+                "iPhone14,7",
+                // iPhone 14 Pro
+                "iPhone15,2",
+                // iPhone 14 Pro Max
+                "iPhone15,3",
                 // iPhone 13
                 "iPhone14,5",
                 // iPhone 13 Pro
@@ -78,6 +84,8 @@ extension Ppi {
         ),
         (
             [
+                // iPhone 14 Plus
+                "iPhone14,8",
                 // iPhone 13 Pro Max
                 "iPhone14,3",
                 // iPhone 12 Pro Max

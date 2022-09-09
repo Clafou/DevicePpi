@@ -84,6 +84,10 @@ iPhone
 * iPhone 13 Pro
 * iPhone 13 Pro Max
 * iPhone SE (3rd generation)
+* iPhone 14
+* iPhone 14 Plus
+* iPhone 14 Pro
+* iPhone 14 Pro Max
 
 iPod touch
 * iPod touch (5th generation)
