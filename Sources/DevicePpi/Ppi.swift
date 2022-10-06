@@ -20,7 +20,14 @@ public enum Ppi {
     public static func get() -> GetPpiResult
     {
         do {
-            let ppi = try Ppi.lookUp(machineName: SysInfo.machineName ?? "n/a")
+            let ppi: Double
+
+            if let simulatorName = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
+                ppi = try Ppi.lookUp(machineName: simulatorName )
+            } else {
+                ppi = try Ppi.lookUp(machineName: SysInfo.machineName ?? "n/a")
+            }
+            
             return .success(ppi: ppi)
         }
         catch {
