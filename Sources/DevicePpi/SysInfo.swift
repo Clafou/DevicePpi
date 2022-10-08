@@ -10,6 +10,11 @@ public enum SysInfo {
     
     /// Machine identifier such as "iPhone6,1", or nil if it could not be determined
     public static var machineName: String? = {
+
+        // Simulator: can't rely on utsname (gives arm64 or x86_64) but there should be an env variable
+        if let simulatorName = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
+            return simulatorName
+        }
         
         //  Adapted from http://stackoverflow.com/questions/26028918/ios-how-to-determine-iphone-model-in-swift/26962452#26962452
         var sysinfo = utsname()
