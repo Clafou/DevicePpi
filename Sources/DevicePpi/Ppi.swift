@@ -48,7 +48,7 @@ extension Ppi {
             return screen.scale == 2 ? 264 : 132
         }
         if screen.scale == 3 {
-            return screen.nativeScale == 3 ? 458 : 401
+            return screen.nativeScale == 3 ? 460 : 401
         }
         return 326
     }
@@ -65,6 +65,14 @@ extension Ppi {
         ),
         (
             [
+                // iPhone 15
+                "iPhone15,4",
+                // iPhone 15 Plus
+                "iPhone15,5",
+                // iPhone 15 Pro
+                "iPhone16,1",
+                // iPhone 15 Pro Max
+                "iPhone16,2",
                 // iPhone 14
                 "iPhone14,7",
                 // iPhone 14 Pro

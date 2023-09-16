@@ -30,7 +30,7 @@ class DevicePpiTests: XCTestCase {
     
     func testUnkownSuperRetinaIPhone() {
         let ppi = Ppi.guess(idiom: .phone, screen: MockScreen(scale: 3, nativeScale: 3))
-        XCTAssertEqual(ppi, 458)
+        XCTAssertEqual(ppi, 460)
     }
     
     func testUnknownRetinaIPhone() {
