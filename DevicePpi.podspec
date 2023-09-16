@@ -27,7 +27,7 @@ Gets the PPI resolution of the display, using a built-in list of known devices.
   s.source           = { :git => 'https://github.com/Clafou/DevicePpi.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/Clafou'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/**/*.swift'
   s.swift_version = '5.0'
