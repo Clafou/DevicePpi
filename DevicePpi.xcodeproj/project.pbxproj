@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		9674BCD921621AA4001928FE /* DevicePpi.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCD821621AA4001928FE /* DevicePpi.podspec */; };
 		9674BCDC21621DDC001928FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCDA21621DDC001928FE /* README.md */; };
 		9674BCDD21621DDC001928FE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9674BCDB21621DDC001928FE /* LICENSE */; };
+		9698449B2C9583DD005514EC /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9698449A2C9583D1005514EC /* Devices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,12 @@
 		9674BCD821621AA4001928FE /* DevicePpi.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DevicePpi.podspec; sourceTree = "<group>"; };
 		9674BCDA21621DDC001928FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9674BCDB21621DDC001928FE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9698449A2C9583D1005514EC /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9698447C2C947ABA005514EC /* Generate */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Generate; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9674BCA6215E385A001928FE /* Frameworks */ = {
@@ -72,6 +78,7 @@
 		96346C2124366EAE0022362F /* DevicePpi */ = {
 			isa = PBXGroup;
 			children = (
+				9698449A2C9583D1005514EC /* Devices.swift */,
 				96346C2224366EAE0022362F /* Ppi.swift */,
 				96346C2424366EAE0022362F /* SysInfo.swift */,
 			);
@@ -99,6 +106,7 @@
 		9674BC9F215E385A001928FE = {
 			isa = PBXGroup;
 			children = (
+				9698447C2C947ABA005514EC /* Generate */,
 				9674BCD821621AA4001928FE /* DevicePpi.podspec */,
 				9674BCAD215E385A001928FE /* Info.plist */,
 				9674BCDB21621DDC001928FE /* LICENSE */,
@@ -144,6 +152,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9698447C2C947ABA005514EC /* Generate */,
 			);
 			name = DevicePpi;
 			productName = DevicePpi;
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96346C2524366EAE0022362F /* Ppi.swift in Sources */,
+				9698449B2C9583DD005514EC /* Devices.swift in Sources */,
 				96346C2724366EAE0022362F /* SysInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
