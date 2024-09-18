@@ -190,18 +190,10 @@
   # iPad Pro 11-inch (M4)
   - iPad16,3
   - iPad16,4
-  - iPad16,3-A
-  - iPad16,3-B
-  - iPad16,4-A
-  - iPad16,4-B
 
   # iPad Pro 13-inch (M4)
   - iPad16,5
   - iPad16,6
-  - iPad16,5-A
-  - iPad16,5-B
-  - iPad16,6-A
-  - iPad16,6-B
 
   # iPad (10th generation)
   - iPad13,18
@@ -210,18 +202,10 @@
   # iPad Pro (11″, 4th generation)
   - iPad14,3
   - iPad14,4
-  - iPad14,3-A
-  - iPad14,3-B
-  - iPad14,4-A
-  - iPad14,4-B
 
   # iPad Pro (12.9″, 6th generation)
   - iPad14,5
   - iPad14,6
-  - iPad14,5-A
-  - iPad14,5-B
-  - iPad14,6-A
-  - iPad14,6-B
 
   # iPad Air (5th generation)
   - iPad13,16
