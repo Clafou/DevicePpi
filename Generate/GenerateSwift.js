@@ -1,4 +1,5 @@
 // Generates a Swift-formatted machineName:ppi dictionary
+// Usage: deno -R GenerateSwift.js > ../Sources/DevicePpi/Devices.swift
 
 import { parse } from "jsr:@std/yaml";
 const text = await Deno.readTextFile("./DevicePpi.yaml");
