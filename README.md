@@ -139,6 +139,7 @@ iPad
 * iPad Air 13-inch (M2)
 * iPad Pro 11-inch (M4)
 * iPad Pro 13-inch (M4)
+* iPad mini (A17 Pro)
 
 Devices that are too old to support iOS 8 or later (this library's deployment target) are not included. These are: iPhone (original model), iPhone 3GS, iPhone 4, and the first, 2nd and 3rd generation of iPod touch.
 

@@ -55,6 +55,8 @@ let machineNameToPpi : [String : Double] =
         "iPod7,1": 326,
         "iPod5,1": 326,
         "iPhone4,1": 326,
+        "iPad16,1": 326,
+        "iPad16,2": 326,
         "iPad14,1": 326,
         "iPad14,2": 326,
         "iPad11,1": 326,
