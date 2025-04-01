@@ -96,6 +96,7 @@ iPhone
 * iPhone 16 Plus
 * iPhone 16 Pro
 * iPhone 16 Pro Max
+* iPhone 16e
 
 iPod touch
 * iPod touch (5th generation)
