@@ -186,6 +186,18 @@
 
 - 264:
 
+  # iPad (11th generation)
+  - iPad15,7
+  - iPad15,8
+
+  # iPad Air (11″, 7th generation)
+  - iPad15,3
+  - iPad15,4
+  
+  # iPad Air (13″, 7th generation)
+  - iPad15,5
+  - iPad15,6
+
   # iPad Air 11-inch (M2)
   - iPad14,8
   - iPad14,9
