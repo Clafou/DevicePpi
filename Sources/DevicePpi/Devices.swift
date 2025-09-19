@@ -6,13 +6,13 @@ let machineNameToPpi : [String : Double] =
         \\ iPhone 12 mini 
         "iPhone13,1": 476,
         \\ iPhone 17 Pro 
-        "iPhone18,1,": 460,
+        "iPhone18,1": 460,
         \\ iPhone 17 Pro Max 
-        "iPhone18,2,": 460,
+        "iPhone18,2": 460,
         \\ iPhone 17 
-        "iPhone18,3,": 460,
+        "iPhone18,3": 460,
         \\ iPhone Air 
-        "iPhone18,4,": 460,
+        "iPhone18,4": 460,
         \\ iPhone 16e 
         "iPhone17,5": 460,
         \\ iPhone 16 
