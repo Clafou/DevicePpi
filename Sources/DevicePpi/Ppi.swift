@@ -6,7 +6,13 @@
 
 #warning("I have moved! To get future updates please update your package URL to https://codeberg.org/Clafou/DevicePpi.git")
 
+#if canImport(UIKit)
 import UIKit
+#elseif canImport(AppKit)
+import AppKit
+#else
+#error("Unsupported platform")
+#endif
 
 public enum Ppi {
     
@@ -21,6 +27,7 @@ public enum Ppi {
     /// that you can log to Crashlytics or other to track new device models that need to be added to the list.
     public static func get() -> GetPpiResult
     {
+#if canImport(UIKit)
         do {
             let ppi = try Ppi.lookUp(machineName: SysInfo.machineName ?? "n/a")
             return .success(ppi: ppi)
@@ -29,6 +36,12 @@ public enum Ppi {
             let ppi = Ppi.guess(idiom: UIDevice.current.userInterfaceIdiom, screen: UIScreen.main)
             return .unknown(bestGuessPpi: ppi, error: error)
         }
+#elseif canImport(AppKit)
+        let ppi = screenPpi(screen: NSScreen.main)
+        return .success(ppi: ppi)
+#else
+        #error("Unsupported platform")
+#endif
     }
 }
 
@@ -45,6 +58,7 @@ extension Ppi {
         return match.ppi
     }
     
+#if canImport(UIKit)
     static func guess(idiom: UIUserInterfaceIdiom, screen: UIScreen) -> Double {
         if idiom == .pad {
             return screen.scale == 2 ? 264 : 132
@@ -54,6 +68,26 @@ extension Ppi {
         }
         return 326
     }
+#endif
+    
+#if canImport(AppKit)
+    static func screenPpi(screen: NSScreen?) -> CGFloat {
+        // Adapted from https://stackoverflow.com/a/55885932/1439489
+        // This returns the effective DPI of the screen, considering scaling etc, not the physical one
+        if let screen,
+           let displayID = (screen.deviceDescription[NSDeviceDescriptionKey("NSScreenNumber")] as? NSNumber)?.uint32Value,
+           let displayMode = CGDisplayCopyDisplayMode(displayID)
+        {
+            let millimetersPerInch: CGFloat = 25.4
+            let displayPhysicalSize = CGDisplayScreenSize(displayID)
+            return millimetersPerInch * CGFloat(displayMode.pixelWidth) / displayPhysicalSize.width
+        } else {
+            // this is the same as what CoreGraphics assumes if no EDID data is available from the display device
+            // https://developer.apple.com/documentation/coregraphics/1456599-cgdisplayscreensize?language=objc
+            return 72
+        }
+    }
+#endif
     
     private static var machineNamesToPpi: [(machineNames: [String], ppi: Double)] = [
         (

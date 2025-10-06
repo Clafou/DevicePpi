@@ -23,6 +23,7 @@ class DevicePpiTests: XCTestCase {
         XCTAssertThrowsError(try Ppi.lookUp(machineName: "DoesNotExist"))
     }
     
+    #if canImport(UIKit)
     func testUnknownRetinaIPad() {
         let ppi = Ppi.guess(idiom: .pad, screen: MockScreen(scale: 2, nativeScale: 2))
         XCTAssertEqual(ppi, 264)
@@ -42,8 +43,16 @@ class DevicePpiTests: XCTestCase {
         let ppi = Ppi.guess(idiom: .pad, screen: MockScreen(scale: 1, nativeScale: 1))
         XCTAssertEqual(ppi, 132)
     }
+    #endif
+    
+    #if canImport(AppKit)
+    func testMac() {
+        XCTAssertNotEqual(Ppi.screenPpi(screen: NSScreen.main), 72)
+    }
+    #endif
 }
 
+#if canImport(UIKit)
 class MockScreen: UIScreen {
     
     let _scale: CGFloat
@@ -67,3 +76,4 @@ class MockScreen: UIScreen {
         }
     }
 }
+#endif
